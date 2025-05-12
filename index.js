@@ -2,7 +2,7 @@
 const express = require( 'express');
 const mongoose = require( 'mongoose');
 const cors = require( 'cors');
-const bioDataRouter = require('./Router/biodataRouter');
+const bioDataRouter = require('./Router/bioDataRouter');
 const ignoreBioDataRouter = require('./Router/ignoreBioDataRouter');
 const favListRouter = require('./Router/favListRouter');
 const usersRouter = require('./Router/usersRouter');
