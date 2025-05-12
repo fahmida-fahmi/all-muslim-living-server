@@ -3,7 +3,7 @@ const usersRouter = express.Router()
 // const { verifyJWT } = require('../Middleware/verificationJWT');
 // const { verifyAdmin } = require('../Middleware/verifyAdmin');
 const { createUser, getAllUser, deleteUser, getSingleUserEmail } = require('../Controller/usersController');
-const { verifyJWT } = require('../Middlewear/verifyToken');
+// const { verifyJWT } = require('../Middlewear/verifyToken');
 
 
 usersRouter.post('/', createUser)

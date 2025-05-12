@@ -2,39 +2,6 @@
 const bcrypt = require('bcryptjs');
 const User = require('../Model/UserModel');
 
-// exports.createUser = async (req, res) => {
-//   const { name, gender, email, password,  } = req.body;
-//   const query = { email };
-//   const existingUser = await User.findOne(query);
-
-//   if (existingUser) {
-//       return res.json({ message: 'User already exists' });
-//   }
-
-//   try {
-//       const salt = await bcrypt.genSalt(10);
-//       const hashedPassword = await bcrypt.hash(password, salt);
-
-//       const user = new User({
-//           name,
-//           password: hashedPassword,
-//           email,
-//           role: 'user'
-//       });
-
-//       user.save()
-//           .then((data) => {
-//               return res.json({ message: 'User successfully inserted', data });
-//           })
-//           .catch((error) => {
-//               console.error(error);
-//               return res.status(500).json({ message: 'Error saving user' });
-//           });
-//   } catch (error) {
-//       console.error(error);
-//       return res.status(500).json({ message: 'Error hashing password' });
-//   }
-// };
 
 exports.createUser = async (req, res) => {
   console.log('Request body:', req.body); // For debugging

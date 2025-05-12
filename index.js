@@ -2,7 +2,6 @@
 const express = require( 'express');
 const mongoose = require( 'mongoose');
 const cors = require( 'cors');
-const SSLCommerzPayment = require('sslcommerz-lts')
 const bioDataRouter = require('./Router/biodataRouter');
 const ignoreBioDataRouter = require('./Router/ignoreBioDataRouter');
 const favListRouter = require('./Router/favListRouter');
